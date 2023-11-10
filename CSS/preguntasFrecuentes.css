@@ -1,0 +1,20 @@
+#ContenedorPreguntasFrecuentes{
+    margin-top: 50px;
+}
+#tarjetaPreguntasFrecuentes{
+    background: #F6F6F6;
+    box-shadow: 0 0 20px #A4D0A4;
+}
+
+.preguntasFrecuentesTitulo{
+    margin-top:10px;
+    font-family: 'Molengo', sans-serif;
+}
+.preguntasFrecuentes{
+    margin-top: 20px;
+    font-family: 'raleway', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}

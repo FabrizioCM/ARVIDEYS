@@ -1,0 +1,464 @@
+
+/*Seccion de la imagen del logo*/
+#logo {
+    width: 170px;
+    height: 50px;
+}
+.navbar-nav.dropdown {
+    margin-right: 20px; 
+}
+
+/* Contenedor de icono de perfil y carrito*/
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*info importada para la barra de busqueda*/
+
+/* Contenedor de input y boton*/
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -100px;
+  }
+  
+/* Versión responsiva*/
+  @media (max-width: 980px){
+    .input-wrapper {
+      left: -120px;
+      position: relative;
+    }
+  }
+
+  .input {
+    border-style: none;
+    height: 40px;
+    width: 20px; 
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: #617A55;
+    box-shadow: 0px 0px 3px #617A55;
+    padding-right: 40px;
+    color: #617A55;
+    position: relative;
+    margin-left: 70px;
+  }
+  
+  /*Texto y color de fuente de la barra de busqueda*/
+  .input::placeholder,
+  .input {
+    font-family: 'Raleway',sans-serif;
+    font-size: 17px;
+  }
+
+  .input::placeholder {
+    color: #8f8f8f;
+  }
+
+/* Botón con icono de la barra de navegación*/
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+    z-index: 10;
+  }
+
+  @media (max-width: 980px) {
+    .icon {
+        position: relative;
+        left: 120px;
+    }
+  }
+  
+  .icon:focus ~ .input,
+  .input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #617A55;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+/*Secciones desplegables en menu de hamburguesa responsivo */
+
+@media (min-width: 980px) {
+    #seccionesNav {
+        display: none;
+    }
+  }
+
+/* Seccion boton hamburguesa responsive*/
+
+  @media (max-width: 980px) {
+    #hamburguesa {
+        display: none;
+    }
+  }
+/* Posición del menu hamburguesa en vista pc*/
+  #hamburguesa{
+    position: relative;
+    left: -50px;
+    
+  }
+/*Imagen del boton de hamburguesa*/
+  .icons{
+    height: 35px;
+  }
+
+/* Propiedades para la vista y colocacion de las subsecciones en Menu hamburguesa*/
+  .seccion-1, .seccion-2, .seccion-3 {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+    text-align: center;
+  }
+
+/* Visualización de las subsecciones*/
+
+.subtext{
+  text-decoration: none;
+  color: black;
+}
+
+/*Seccion del icono de perfil*/
+  .perfil{
+    width: 40px;
+    height: 40px;
+    border: 5px solid #617A55;
+    border-radius: 50%;
+    position: relative;
+    left: -20px;
+}
+
+.contenedorIconos{ 
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+/*Sección para no mostrar los iconos en la navbar con cierta dimensión*/
+@media (min-width: 981px) {
+#botonPerfil{
+  display: none;
+}
+#botonCarrito{
+  display: none;
+}
+}
+
+/*Sección de perfil responsive*/
+@media (max-width: 980px) {
+    .perfil {
+        width: 30px;
+        height: 30px;
+    }
+/*Sección responsive de los iconos de perfil, carrito y hamburguesa*/  
+
+  .contenedorIconos{ 
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  width: 120px;
+  justify-content: space-between;
+}
+}
+
+/*Vista de los iconos con maximo de 300px*/
+@media(max-width: 300px){
+  .contenedorIconos{
+    position: relative;
+    left: 70px;
+  }
+  #logo{
+    position: relative;
+    left: 30px;
+  }
+}
+
+/*Sección de la img de cart */
+  .cart{
+    width: 35x;
+    height: 35px;
+  
+}
+
+/*Sección de cart */
+@media (max-width: 980px) {
+  .cart {
+      width: 30px;
+      height: 30px;
+  }
+  .menu{
+    display: none; 
+  }
+}
+/*Distorsión a las imagenes del carrusel*/
+
+/*Centrar el texto en la imagen del carrusel*/
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+}
+/*Contenedor del texto del carrusel*/
+.d-flex {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+}
+
+/*Propiedades para los textos del carrusel responsive*/
+@media (max-width: 730px){
+  .carousel-title{
+    font-size: 10px;
+      
+  }
+  .carrusel-text{
+    font-size: 7px;
+    
+  }
+}
+
+@media (max-width: 300px){
+  .carousel-title{
+    font-size: 8px;
+      
+  }
+  .carrusel-text{
+    font-size: 4px;
+    
+  }
+}
+
+@media (min-width: 900px){
+  .carousel-title{
+    position: relative;    
+  }
+}
+/*Propiedades al texto del carrusel*/
+.carousel-title{
+  text-align: center;
+  font-weight: bold;
+  color: white; 
+  text-shadow: 
+    -1px -1px 2px rgba(0, 0, 0, 1),
+     1px -1px 2px rgba(0, 0, 0, 1),
+    -1px  1px 2px rgba(0, 0, 0, 1),
+     1px  1px 2px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  background-size: cover;
+  margin-bottom: 10px;
+  display: inline !important; 
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.3); */
+}
+.carrusel-text{
+  text-align: center;
+  font-weight: bold;
+  color: white; 
+  text-shadow: 
+  -1px -1px 2px rgba(0, 0, 0, 1),
+   1px -1px 2px rgba(0, 0, 0, 1),
+  -1px  1px 2px rgba(0, 0, 0, 1),
+   1px  1px 2px rgba(0, 0, 0, 1); 
+  border-radius: 5px;
+  background-size: cover;
+  margin-bottom: 10px;
+  display: inline !important; 
+   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.3); */
+}
+/* #img-distorsion{
+  filter: blur(1px);
+} */
+
+/*Cambiar color de los iconos de las flechas*/
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23617a55' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+
+ .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23617a55' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* CSS para sección de Servicios*/
+
+  .images{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 8px;
+  }
+
+  .position{
+    position: relative;
+    left: -20px;
+  }
+
+  .titleServices{
+    text-align: center;
+    color: #617A55;
+  }
+
+  .cardContainer{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+  }
+
+.subContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Frame de las imagenes de home*/
+.figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+/* Tamaño de las imagenes de Home Hombre - Mujer*/
+.size{
+  height: 600px;
+  width: 500px;
+  transition: all .5s;
+  object-fit: cover;
+}
+.size:hover{
+  transform: scale(1.2);
+}
+
+/*Contenedor del texto de la card de Hombre y Mujer*/
+.text-container {
+  position: absolute;
+  top: 85%;
+  text-align: center;
+}
+
+/*Posicion del texto para hombre y mujer*/
+.man{
+  left: 34%;
+}
+
+.woman{
+  left: 38%
+}
+/*Retirar el underline del texto*/
+.link-success{
+  text-decoration: none;
+}
+/*Color del texto*/
+.label{
+  color: white;
+  font-size: 40px;
+}
+
+
+/* Font families*/
+.titleText{
+  font-family: 'Molengo', sans-serif;
+}
+
+.text{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Boton de descuento*/
+.input-group{
+  margin-top: 20px;
+  justify-content: center;
+
+}
+
+
+/*BOTON DEL FORMULARIO*/
+.cssbuttons-io {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  border: none;
+  overflow: hidden;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #A4D0A4;
+  color: white;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover {
+  background: #617461;
+  color: white;
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+.alertText{
+  font-size: 9px;
+  text-align: left;
+  width: 100%;
+  margin-top: 5px;
+  align-items: center;
+}
+
+#linkDevoluciones{
+  font-family: 'Raleway', sans-serif; 
+  color: black;
+}

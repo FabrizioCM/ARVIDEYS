@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/carrusel.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/listaDeObjetos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Lista de Objetos</title>
+</head>
+<body>
+  
+  <!--Navbar-->
+    <div id="navbar">
+   </div>
+
+     
+        <!--carousel section-->
+        <div id="carouselTop" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div id="buttonSlide" class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img id="img-distorsion" src="../ASSETS/IMG/Oaxaca3.png" class="d-block w-100" alt="...">
+              <div  class="carousel-caption d-flex" >
+                <h5 class="carousel-title">¿Como nace Arivideys?</h5>
+                <p class="carrusel-text text">
+                  Arvideys nace en el corazón de Oaxaca, fusionando la destreza artesanal local con la pasión por la cultura. Fundado por apasionados artesanos, este negocio de ropa oaxaqueña se convierte en un símbolo de autenticidad, llevando la riqueza textil de Oaxaca al mundo, celebrando así la herencia única de esta tierra ancestral.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img id="img-distorsion2" src="../ASSETS/IMG/Oaxaca2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-flex">
+                <h5 class="carousel-title">¿Por qué ropa Oaxaqueña?</h5>
+                <p class="carrusel-text text">
+                  La ropa oaxaqueña es un fiel reflejo de la rica herencia cultural de Oaxaca, México. Caracterizada por colores vibrantes y tejidos intrincados, la vestimenta tradicional oaxaqueña a menudo incorpora técnicas ancestrales como el telar de cintura y bordados a mano. Cada prenda cuenta una historia única, fusionando la tradición indígena zapoteca y mixteca con influencias coloniales, creando un estilo distintivo y emblemático de la región.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img id="img-distorsion3" src="../ASSETS/IMG/Oaxaca1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-flex">
+                <h5 class="carousel-title">¡Descubrenos!</h5>
+                <p class="carrusel-text text">¡Descubre el encanto de la moda oaxaqueña en Arvideys! Sumérgete en un mundo de colores vibrantes, tejidos exquisitos y artesanía auténtica. Te invitamos a explorar nuestra tienda y descubrir prendas únicas que narran la rica historia de Oaxaca. ¡Embárcate en una experiencia de moda que celebra la tradición y la elegancia en cada puntada!</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+    <!--Seccion de Filtros-->
+    <div class="wrap">
+      <div class="store-wrapper">   
+          <div class="category_list">
+            <ul class="desplegar-filtro"> 
+            <li class="category_items filter-item" category="all" id="todo">Todo</li>
+          </ul>
+            <ul class="desplegar-filtro">
+              <li class="category_items">Talla</li>
+              <div class="filtro-sections-1">
+                <input type="checkbox" id="check1" class="filtro-checkbox">
+                  <label class="filter-item" category="Talla" filter="Chica" for="check1">Chica</label>
+              </div>  
+              <div class="filtro-sections-2">
+                <input type="checkbox" id="check2" class="filtro-checkbox">
+                  <label class="filter-item"  category="Talla" filter="Mediana" for="check2">Mediana</label>
+              </div>  
+              <div class="filtro-sections-3">
+                <input type="checkbox" id="check3" class="filtro-checkbox">
+                  <label class="filter-item"  category="Talla" filter="Grande" for="check3">Grande</label>
+              </div>   
+            </ul>
+  
+            <ul class="desplegar-filtro">
+              <li class="category_items">Color</li>
+              <div class="filtro-sections-1">
+                <input type="checkbox" id="check4" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Rojo" for="check4">Rojo</label>
+              </div>  
+              <div class="filtro-sections-2">
+                <input type="checkbox" id="check5" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Azul" for="check5">Azul</label>
+              </div>  
+              <div class="filtro-sections-3">
+                <input type="checkbox" id="check6" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Cafe" for="check6">Cafe</label>
+              </div>  
+              <div class="filtro-sections-4">
+                <input type="checkbox" id="check7" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Negro" for="check7">Negro</label>
+              </div>  
+              <div class="filtro-sections-5">
+                <input type="checkbox" id="check8" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Verde" for="check8">Verde</label>
+              </div>  
+              <div class="filtro-sections-6">
+                <input type="checkbox" id="check9" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Rosa" for="check9">Rosa</label>
+              </div>
+              <div class="filtro-sections-7">
+                <input type="checkbox" id="check10" class="filtro-checkbox">
+                  <label class="filter-item" category="Color" filter="Blanco" for="check10">Blanco</label>
+              </div>    
+            </ul>
+            <ul class="desplegar-filtro">
+              <li class="category_items">Tipo de bordado</li>
+              <div class="filtro-sections-1">
+                <input type="checkbox" id="check11" class="filtro-checkbox">
+                  <label class="filter-item" category="Tipo de bordado" filter="Sin bordado" for="check11">Sin bordado</label>
+              </div>  
+              <div class="filtro-sections-2">
+                <input type="checkbox" id="check12" class="filtro-checkbox">
+                  <label class="filter-item" category="Tipo de bordado" filter="A mano" for="check12">A mano</label>
+              </div>  
+              <div class="filtro-sections-3">
+                <input type="checkbox" id="check13" class="filtro-checkbox">
+                  <label class="filter-item" category="Tipo de bordado" filter="Maquina" for="check13">Máquina</label>
+              </div>  
+            </ul>
+          </div>
+
+    <!--Sección de productos-->
+
+       <div id="articles-container" class="articles-container">
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+<script src="../JS/footer.js"></script>
+<script src="../JS/navbar.js"></script>
+<script src="../JS/hamburguesa.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="../JS/filtrosRopa.js"></script>
+<script src="../JS/ropaCards.js"></script>
+<script src="../JSON/faldas.jsonp"></script>
+</body>
+<footer id="footer"> 
+</footer>
+</html>
